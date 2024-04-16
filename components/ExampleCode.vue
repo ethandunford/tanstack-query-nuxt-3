@@ -3,7 +3,7 @@ const tsqExample = `import { useQuery, useMutation } from "@tanstack/vue-query";
 
 // services/api.ts
 export function useApi() {
-  
+
   // For read requests ( it can take variables )
   // https://tanstack.com/query/latest/docs/vue/reference/useQuery
   const getTimeStamp = useQuery({
