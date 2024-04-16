@@ -1,1 +1,1 @@
-export { default } from "file:///home/ebd/Projects/tanstack-query-nuxt-3/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
+export { default } from "file:///C:/Users/ethandunford/WebstormProjects/tanstack-query-nuxt-3/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"

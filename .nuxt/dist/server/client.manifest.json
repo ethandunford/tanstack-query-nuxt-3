@@ -7,12 +7,12 @@
     "module": true,
     "resourceType": "script"
   },
-  "/home/ebd/Projects/tanstack-query-nuxt-3/node_modules/nuxt/dist/app/entry.js": {
+  "C:/Users/ethandunford/WebstormProjects/tanstack-query-nuxt-3/node_modules/nuxt/dist/app/entry.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
     "isEntry": true,
-    "file": "/home/ebd/Projects/tanstack-query-nuxt-3/node_modules/nuxt/dist/app/entry.js"
+    "file": "C:/Users/ethandunford/WebstormProjects/tanstack-query-nuxt-3/node_modules/nuxt/dist/app/entry.js"
   }
 }
