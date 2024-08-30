@@ -1,4 +1,9 @@
 <template>
+    <div class="bg-red-600">
+      <div class="container mx-auto px-4 py-4 text-center text-white">
+        <h1> DEMO APPLICATION </h1>
+      </div>
+    </div>
   <div class="container mx-auto px-4 py-8">
     <Intro />
     <ExampleCode />

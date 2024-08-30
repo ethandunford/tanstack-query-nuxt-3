@@ -9,7 +9,7 @@
       always-up-to-date auto-managed queries and mutations that directly
       improve both your developer and user experiences.
       <a
-          href="https://tanstack.com/query/latest/docs/vue/guides"
+          href="https://tanstack.com/query/latest/docs/framework/vue/overview"
           target="_blank"
           class="underline"
       >Take me to the docs </a
