@@ -1,9 +1,14 @@
-# Tanstack Query Demo
+# TanStack Query & Pinia Colada Demo
 
 [![language:typescript](https://img.shields.io/badge/language-typescript-blue)]()
 [![framework:nuxt](https://img.shields.io/badge/language-nuxt-green)]()
 
-A small demo application showcasing `tanstack/vue-query`
+A small demo application showcasing `tanstack/vue-query` and `piniacolada`
+
+Requires
+
+* npm >= 10.9.2
+* node >= 22.13.1
 
 ## Running locally
 
@@ -22,7 +27,7 @@ Apache License, Version 2.0
 
 # Version
 
-1.0
+1.9
 
 ## Contributing
 
