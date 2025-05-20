@@ -1,8 +1,6 @@
 <template>
-  <section class="py-4">
-    <h1 class="text-4xl text-bold mb-2">
-      Fetch, Cache, and Update Data Effortlessly
-    </h1>
+  <section class="pb-4">
+    <h1 class="text-4xl text-bold mb-2">TanStack Query</h1>
     <p>
       Toss out that granular state management, manual refetching and endless
       bowls of async-spaghetti code. TanStack Query gives you declarative,
@@ -30,6 +28,6 @@
     >
   </section>
 </template>
-<script lang="ts">
+<script lang="ts" setup>
 
 </script>
