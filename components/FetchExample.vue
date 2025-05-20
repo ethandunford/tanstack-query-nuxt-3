@@ -27,7 +27,7 @@
 
 import {computed} from "vue";
 
-const props = defineProps<{ timestamp: string | undefined; disableInvalidateBtn: boolean }>()
+const props = defineProps<{ timestamp: string | undefined; disableInvalidateBtn: boolean, }>()
 const emit = defineEmits<{ (e: "refresh", value: boolean): void; }>()
 
 const previousTimeStamp = ref<string | undefined>(undefined)

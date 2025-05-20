@@ -1,49 +1,3 @@
-<script setup lang="ts">
-import { computed } from "vue";
-import { useApi } from "../services/api";
-const remountFetch = ref(false);
-const remountTanStackQuery = ref(false);
-
-const { isEven } = useApi();
-const { status, mutate, reset } = isEven;
-
-const inputValue = ref("");
-
-const submitIsEven = () => {
-  mutate({ number: inputValue.value });
-  inputValue.value = "";
-
-  console.log("submit is even");
-};
-
-const getIcon = computed(() => {
-  if (status.value === "error") {
-    return "❌";
-  } else if (status.value === "success") {
-    return "✔️";
-  }
-  return "";
-});
-
-const getMessage = computed(() => {
-  if (status.value === "error") {
-    return "Value is invalid or a odd number";
-  } else if (status.value === "success") {
-    return "Value is a even number";
-  }
-  return "";
-});
-
-const disable = computed(() => {
-  return status.value === "pending";
-});
-
-onMounted(() => {
-  remountFetch.value = !remountFetch.value;
-  remountTanStackQuery.value = !remountTanStackQuery.value;
-});
-</script>
-
 <template>
   <section class="my-4">
     <div>
@@ -82,5 +36,40 @@ onMounted(() => {
     </div>
   </section>
 </template>
+<script setup lang="ts">
+import { computed } from "vue";
+import { useApi } from "~/data/tanStackQuery";
+import { timestamp } from "~/libs/utils"
+import { getResultIcon, getResultMessage } from "~/components/helper";
 
+const { isEven } = useApi();
+const { status, mutate, reset } = isEven;
+
+const inputValue = ref("");
+const remountFetch = ref(false);
+const remountTanStackQuery = ref(false);
+
+const submitIsEven = () => {
+  timestamp("tanstack - submit is even");
+  mutate(inputValue.value);
+  inputValue.value = "";
+};
+
+const getIcon = computed(() => {
+  return getResultIcon(status.value);
+});
+
+const getMessage = computed(() => {
+  return getResultMessage(status.value)
+});
+
+const disable = computed(() => {
+  return status.value === "pending";
+});
+
+onMounted(() => {
+  remountFetch.value = !remountFetch.value;
+  remountTanStackQuery.value = !remountTanStackQuery.value;
+});
+</script>
 <style></style>
